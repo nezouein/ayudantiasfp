@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- META -->
+    <title>Inicio | FP</title>
+    <div id="header"></div>
+
     <!-- IMPORTADORES -->
     <script>
         async function loadComponent(id, file) {
@@ -10,26 +14,23 @@
             document.getElementById(id).innerHTML = html;
         }
 
-        loadComponent('header', './extras/header.html');
         loadComponent('navbar', './extras/navbar.html');
         //loadComponent('footer', 'footer.html');
     </script>
 
-    <!-- META -->
-    <title>Inicio | FP</title>
-    <div id="header"></div>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
     <div id="navbar"></div>
     
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Welcome to My Website</h1>
-            <p class="subtitle">This is a simple webpage using Bulma CSS framework.</p>
+    <!-- CONTENIDO -->
+    <section class="hero is-link is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title">Fundamentos de Programación</p>
+                <p class="subtitle">Sitio web donde encontrarás guía útiles de la materia</p>
+            </div>
         </div>
     </section>
     
