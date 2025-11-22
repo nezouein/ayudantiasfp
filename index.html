@@ -2,6 +2,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- META -->
+    <title>Inicio • Ayudantias FP</title>
+    <link rel="icon" type="image/png" href="https://github.com/nezouein/ayudantiasfp/blob/main/assets/python_logo_opensource.png?raw=true"/>
+    <meta name="description" content="Informacion relacionada con Fundamentos de Programación">
+    <meta name="keywords" content="Bulma, CSS, Web Development, HTML">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta favicon href="https://github.com/nezouein/ayudantiasfp/blob/main/assets/python_logo_opensource.png?raw=true" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- IMPORTADORES -->
     <script>
         async function loadComponent(id, file) {
@@ -10,32 +22,27 @@
             document.getElementById(id).innerHTML = html;
         }
         
-        loadComponent('header', './extras/header.html');
         loadComponent('navbar', './extras/navbar.html');
-        //loadComponent('footer', 'footer.html');
-    </script>
-
-    <!-- META -->
-    <title>Inicio • Ayudantias FP</title>
-    <link rel="icon" type="image/png" href="https://github.com/nezouein/ayudantiasfp/blob/main/assets/python_logo_opensource.png?raw=true"/>
-    <div id="header"></div>
-</head>
-
+        loadComponent('footer', './extras/footer.html');
+    </script></head>
 <body>
     <!-- NAVBAR -->
     <div id="navbar"></div>
     
     <!-- CONTENIDO -->
-    <section class="hero is-link is-fullheight-with-navbar">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <p class="title">Fundamentos de Programación</p>
-                <p class="subtitle">Sitio web donde encontrarás guía útiles de la materia</p>
+    <div class="block">
+        <section class="hero is-link is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title">Fundamentos de Programación</p>
+                    <p class="subtitle">Sitio web donde encontrarás guía útiles de la materia</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
-    
+    <!-- FOOTER -->
+    <div id="footer"></div>
     
 
 </body>
